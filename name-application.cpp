@@ -223,10 +223,8 @@ void AddControls(HWND hWnd, HINSTANCE hInst) {
         100, 470, 520, 110, hWnd, (HMENU)EDIT_OUTPUT, hInst, NULL
     );
     SendMessageW(hEditOutput, WM_SETFONT, (WPARAM)hFont3, TRUE);
-    //HWND hCheckBox1 = CreateWindowW(L"BUTTON", L"Enable Feature",
-    //              WS_VISIBLE | WS_CHILD | BS_AUTOCHECKBOX | WS_BORDER,
-    //              20, 20, 150, 20, hWnd, (HMENU)1001, hInst, NULL
-    //);
+    
     SendMessageW(hWnd, WM_CHANGEUISTATE, MAKEWPARAM(UIS_SET, UISF_HIDEFOCUS), 0);
     
+
 }
